@@ -1,6 +1,7 @@
-# LpFi
+# LpMangaReader
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+Projet Angular de lecture de manga en ligne, le projet ne permet pas de lire les pages des chapitres car il aurait fallu créer une 3ème entité.
 
 ## Development server
 
