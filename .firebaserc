@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "lp-manga-reader"
+  },
+  "targets": {
+    "lp-manga-reader": {
+      "hosting": {
+        "lp-fi": [
+          "lp-manga-reader"
+        ]
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  MangaEndpoint: 'http://localhost:3000/mangas',
-  ChapitreEndpoint: 'http://localhost:3000/chapitres',
+  MangaEndpoint: 'https://lpdimryan.herokuapp.com/mangas',
+  ChapitreEndpoint: 'https://lpdimryan.herokuapp.com/chapitres',
 };

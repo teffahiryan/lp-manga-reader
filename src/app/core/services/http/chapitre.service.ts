@@ -34,10 +34,7 @@ export class ChapitreService {
   }
 
   put(chapitre: Chapitre, id): Observable<Chapitre> {
-    return this._httpClient.put<Chapitre>(
-      'http://localhost:3000/chapitres/' + id,
-      chapitre
-    );
+    return this._httpClient.put<Chapitre>(this.endPoint + '/' + id, chapitre);
   }
 
   delete(id): Observable<Chapitre> {
