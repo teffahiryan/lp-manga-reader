@@ -1,0 +1,77 @@
+{
+  "mangas": [
+    {
+      "nom": "Hajime no Ippo",
+      "img": "imgHa.jpg",
+      "anneePubli": "1989",
+      "id": 1,
+      "genre": "Action, Humour",
+      "type": "Shonen",
+      "statut": "En cours"
+    },
+    {
+      "nom": "Naruto",
+      "img": "imgNa.jpg",
+      "anneePubli": "1999",
+      "id": 2,
+      "genre": "Action, Humour",
+      "type": "Shonen",
+      "statut": "Terminé"
+    },
+    {
+      "nom": "Berserk",
+      "img": "imgBe.jpeg",
+      "anneePubli": "1989",
+      "id": 3,
+      "genre": "Action, horreur",
+      "type": "Seinen",
+      "statut": "En cours"
+    },
+    {
+      "nom": "Solo Leveling",
+      "img": "imgSo.jpg",
+      "anneePubli": "2016",
+      "id": 4,
+      "genre": "Action",
+      "type": "Shonen",
+      "statut": "En cours"
+    }
+  ],
+  "chapitres": [
+    {
+      "id": 1,
+      "nom": "Début Ippo",
+      "pageCouverture": "ha1c1p1.PNG",
+      "numero": 1,
+      "MangaId": 1
+    },
+    {
+      "id": 2,
+      "nom": "Début Naruto",
+      "pageCouverture": "na1c1p1.PNG",
+      "numero": 1,
+      "MangaId": 2
+    },
+    {
+      "id": 3,
+      "nom": "Début Berserk",
+      "pageCouverture": "be1c1p1.PNG",
+      "numero": 1,
+      "MangaId": 3
+    },
+    {
+      "id": 4,
+      "nom": "Début Solo leveling",
+      "pageCouverture": "so1c1p1.PNG",
+      "numero": 1,
+      "MangaId": 4
+    },
+    {
+      "nom": "Opération tortue",
+      "pageCouverture": "ha1c2p1.PNG",
+      "numero": "2",
+      "MangaId": 1,
+      "id": 5
+    }
+  ]
+}

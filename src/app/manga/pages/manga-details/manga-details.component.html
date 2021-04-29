@@ -1,0 +1,49 @@
+<h1>{{ (manga | async)?.nom }}</h1>
+
+<div id="container-flex">
+  <div>
+    <img src="../../../../assets/img/manga/{{ (manga | async)?.img }}" />
+  </div>
+  <div>
+    <h2>Informations</h2>
+
+    <ul>
+      <li><b> Titre : </b> {{ (manga | async)?.nom }}</li>
+      <li><b> Année de publication : </b> {{ (manga | async)?.anneePubli }}</li>
+      <li><b> Genre :</b> Action, Humour</li>
+      <li><b> Type :</b> Shonen</li>
+      <li><b> Statut :</b> En cours</li>
+    </ul>
+  </div>
+</div>
+
+<div id="button">
+  <button id="buttonUpdate" mat-button (click)="openDialogUpdate()">
+    <span class="material-icons"> mode_edit </span> Modifier les informations
+  </button>
+  <button id="buttonDelete" mat-button (click)="delete(mangaId)">
+    <span class="material-icons"> delete </span> Supprimer le manga
+  </button>
+</div>
+
+<h2>Liste des chapitres</h2>
+
+<ul id="listChapter">
+  <li *ngFor="let chapitre of chapitres | async">
+    <a
+      href="/mangas/{{ (manga | async)?.id }}/chapter/{{ chapitre.id }}"
+      id="test"
+    >
+      <p>Chapitre {{ chapitre.numero }} : {{ chapitre.nom }}</p>
+    </a>
+  </li>
+</ul>
+
+<div id="button_add">
+  <p>
+    <button mat-button (click)="openDialog()">
+      <span class="material-icons"> add_circle </span>
+    </button>
+  </p>
+  <p>Ajouter un chapitre</p>
+</div>
