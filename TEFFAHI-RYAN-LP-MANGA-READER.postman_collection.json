@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "b9512781-4a7d-454d-999b-cbed3209f79c",
+		"name": "TEFFAHI-RYAN-LP-MANGA-READER",
+		"description": "Teffahi Ryan\r\nLP-DIM FI\r\n\r\nProjet angular LP MANGA READER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get manga",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/mangas",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mangas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get chapitres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/chapitres",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"chapitres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get manga by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/mangas/1",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mangas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get chapitre by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/chapitres/1",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"chapitres",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete chapitre",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/chapitres/6",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"chapitres",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete manga",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/mangas/1",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mangas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add manga",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n      \"nom\": \"Hajime no Ippo\",\r\n      \"img\": \"imgHa.jpg\",\r\n      \"anneePubli\": \"1989\",\r\n      \"genre\": \"Actioooooooooooooooooon, Humour\",\r\n      \"type\": \"Shonen\",\r\n      \"statut\": \"En cours\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/mangas",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mangas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add chapitre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n      \"nom\": \"Début Solooooooooooooo leveling\",\r\n      \"pageCouverture\": \"so1c1p1.PNG\",\r\n      \"numero\": 1,\r\n      \"MangaId\": 4\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/chapitres",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"chapitres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update manga",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n      \"nom\": \"Hajime no Ippoo\",\r\n      \"img\": \"imgHa.jpg\",\r\n      \"anneePubli\": \"1989\",\r\n      \"id\": 1,\r\n      \"genre\": \"Action, Humour\",\r\n      \"type\": \"Shonen\",\r\n      \"statut\": \"En cours\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/mangas/1",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mangas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update chapitre",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n      \"nom\": \"Début Ippoooo\",\r\n      \"pageCouverture\": \"ha1c1p1.PNG\",\r\n      \"numero\": 1,\r\n      \"MangaId\": 1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://lpdimryan.herokuapp.com/chapitres/1",
+					"protocol": "https",
+					"host": [
+						"lpdimryan",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"chapitres",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
